@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -53,5 +55,33 @@ public class Main {
         profesor1.enseñar();
 
         System.out.println("----- DATOS DE EMPLEADO ADMINISTRATIVO-----");
+
+        EmpleadoAdministrativo administrativo1 = new EmpleadoAdministrativo(
+                "Pedro",
+                "Almodovar",
+                35,
+                "33456214",
+                "Secretario Turno Mañana",
+                "8:00 a 14:00",
+                900100.67
+        );
+
+        //se muestra la info del administrativo
+        administrativo1.mostrarInformacion();
+
+        //Se llama al método admiistar()
+        administrativo1.administrar();
+
+        System.out.println("\n POLIMORFISMO:");
+        // ArrayList de tipo Persona
+        ArrayList<Persona> personas = new ArrayList<>();
+        personas.add(estudiante1);
+        personas.add(profesor1);
+        personas.add(administrativo1);
+
+        for (Persona p : personas) {
+            p.mostrarInformacion(); // Se llama al método correcto según el objeto real
+            System.out.println("----------------------");
+        }
     }
 }
