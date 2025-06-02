@@ -3,7 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Se crea el objeto
+        System.out.println("----- DATOS DE PERSONA -----");
+        //Se crea el objeto persona,
         Persona persona1 = new Persona("Pepe","Ruiseñor",26, "34527165");
 
         //Se muestran los datos con toString()
@@ -15,7 +16,8 @@ public class Main {
         //Mostramos nuevamente el resultado
         System.out.println(persona1);
 
-        //Se crea un estudiante
+        System.out.println("----- DATOS DE ESTUDIANTE -----");
+        //Se crea un objeto estudiante
         Estudiante estudiante1 = new Estudiante(
                 "Estivalet",
                 "Quesada",
@@ -26,11 +28,30 @@ public class Main {
                 9.2
         );
 
-        //Mostramos toda la info
+        //Se muestra toda la info
         estudiante1.mostrarInformacion();
 
-        //Llamamos al método estudiar
+        //Se llama al método estudiar()
         estudiante1.estudiar();
 
+        System.out.println("----- DATOS DE PROFESOR -----");
+        //Se crea un objeto profesor
+        Profesor profesor1 = new Profesor(
+                "Ramon",
+                "Ochoa",
+                54,
+                "20567890",
+                "Ingeniería Química",
+                1123475.56,
+                25
+        );
+
+        //Se muestra la info de profesor
+        profesor1.mostrarInformacion();
+
+        //Se llama al método enseñar()
+        profesor1.enseñar();
+
+        System.out.println("----- DATOS DE EMPLEADO ADMINISTRATIVO-----");
     }
 }
