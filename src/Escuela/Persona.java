@@ -52,11 +52,11 @@ public class Persona {
     // Se sobreescribe el método ToString -> que viene de la clase Object
     @Override
     public String toString() {
-        return "---- DATOS DE LA PERSONA ----\n" +
-                "Nombre: " + nombre + "\n" +
+        return "Nombre: " + nombre + "\n" +
                 "Apellido: " + apellido + "\n" +
                 "Edad: " + edad + "\n" +
                 "DNI: " + dni + "\n";
+
     }
 
     //metodo mostrarInformacion() con el toString adentro
