@@ -1,5 +1,7 @@
 package Nivel1;
 
+import Nivel2.Ejercicio6;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Probando ejercicios del Nivel 1:");
