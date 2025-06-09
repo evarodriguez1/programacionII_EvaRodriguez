@@ -1,3 +1,5 @@
+package Escuela;
+
 public class Persona {
     //Atributos Privados (encapsulamiento)
     private String nombre;

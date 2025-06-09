@@ -1,3 +1,5 @@
+package Escuela;
+
 public class Estudiante extends Persona {
     // Atributos propios (privados)
     private String matricula;
@@ -6,7 +8,7 @@ public class Estudiante extends Persona {
 
     // Constructor con super()
     public Estudiante(String nombre, String apellido,int edad,String dni, String matricula, String carrera, double promedio) {
-        super(nombre, apellido, edad, dni); // Llama al constructor de Persona
+        super(nombre, apellido, edad, dni); // Llama al constructor de Escuela.Persona
         this.matricula = matricula;
         this.carrera = carrera;
         this.promedio = promedio;
@@ -46,7 +48,7 @@ public class Estudiante extends Persona {
     // Override mostrarInformacion()
     @Override
     public void mostrarInformacion() {
-        super.mostrarInformacion(); // Muestra lo de Persona
+        super.mostrarInformacion(); // Muestra lo de Escuela.Persona
         System.out.println("Matricula: " + matricula);
         System.out.println("Carrera: " + carrera);
         System.out.println("Promedio: " + promedio);

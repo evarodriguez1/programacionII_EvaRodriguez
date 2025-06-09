@@ -1,3 +1,5 @@
+package Escuela;
+
 import java.util.ArrayList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -73,7 +75,7 @@ public class Main {
         administrativo1.administrar();
 
         System.out.println("\n POLIMORFISMO:");
-        // ArrayList de tipo Persona
+        // ArrayList de tipo Escuela.Persona
         ArrayList<Persona> personas = new ArrayList<>();
         personas.add(estudiante1);
         personas.add(profesor1);
